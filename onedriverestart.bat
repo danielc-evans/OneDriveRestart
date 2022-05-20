@@ -2,8 +2,7 @@
 ECHO The script will restart the OneDrive app on Windows to fix sync issues. 
 ECHO You will not lose files or data.
 timeout 10
-net stop spooler
-net start spooler
+%localappdata%\Microsoft\OneDrive\onedrive.exe /reset
 ECHO Restart complete.
 ECHO Closing window after timeout...
 timeout 10
